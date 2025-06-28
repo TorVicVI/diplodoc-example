@@ -8,6 +8,10 @@ servers:
     description: Тестовая среда
   - url: https://petstore.dev.api/v1
     description: Реальная среда
+
+security:
+  -ApiKeyAuth: []
+
 components:
   securitySchemes:
     ApiKeyAuth:
@@ -39,8 +43,7 @@ components:
         message:
           type: string
           description: Описание ошибки
-security:
-  -ApiKeyAuth: []
+  
 paths:
   /pets:
     get:
