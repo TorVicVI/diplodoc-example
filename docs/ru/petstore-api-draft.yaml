@@ -1,8 +1,13 @@
 openapi: 3.0.3
 info:
-  title: Minimal PetStore API
+  title: Главный Интерфейс (API)
   version: 1.0.0
+  description: Тестовая спецификация для управления питомцами
+  
 servers:
-  - url: https://test1.example.com
-  - url: https://test2.example.com
+  - url: https://api.dev.petstore/v1
+    description: Тестовая среда
+  - url: https://api.prod.petstore/v1
+    description: Рабочая среда
+
 paths: {}
