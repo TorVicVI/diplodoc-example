@@ -51,9 +51,7 @@ paths:
           content:
             application/json:
               scheme:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Pet"
+                $ref: "#/components/schemas/Pet"
         "400":
           description: Ошибка аутентификации
           content:
