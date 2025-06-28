@@ -13,7 +13,17 @@ servers:
 security:
   - ApiKeyAuth: []
 
-paths: {}
+paths:
+  /pets:
+    get:
+      summary: Список питомцев
+      responses:
+        '200':
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pets'
 
 components:
   securitySchemes:
