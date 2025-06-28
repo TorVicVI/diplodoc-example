@@ -12,6 +12,7 @@ servers:
 security:
   -ApiKeyAuth: []
 
+
 components:
   securitySchemes:
     ApiKeyAuth:
