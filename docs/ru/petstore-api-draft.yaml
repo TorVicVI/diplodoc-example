@@ -10,6 +10,26 @@ servers:
   - url: https://api.prod.petstore/v1
     description: Рабочая среда
 
+
+paths:
+  /pets:
+    get:
+      summary: Get pets list
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+
 components:
   securitySchemes:
     ApiKeyAuth:
