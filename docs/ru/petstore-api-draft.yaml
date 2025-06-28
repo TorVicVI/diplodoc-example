@@ -1,65 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Интерфейс (API)
+  title: Minimal PetStore API
   version: 1.0.0
-  description: Интерфейс для управления питомцами
 servers:
-  - url: https://petstore.test.api/v1
-    description: Тестовая среда
-  - url: https://petstore.dev.api/v1
-    description: Реальная среда
-
-security:
-  -ApiKeyAuth: []
-
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      type: apiKey
-      in: header
-      name: X-API-Key
-  schemas:
-    Pet:
-      type: object
-      required:
-        - id
-        - name
-      properties:
-        id:
-          type: integer
-          description: Уникальный идентификатор питомца
-        name:
-          type: string
-          description: Имя питомца (Например Мурзик)
-        status:
-          type: string
-          description: Статус питомца (доступно/ожидается/продано)
-    Error:
-      type: object
-      properties:
-        code:
-          type: integer
-          description: Код Ошибки
-        message:
-          type: string
-          description: Описание ошибки
-  
-paths:
-  /pets:
-    get:
-      summary: Получить список питомцев
-      responses:
-        "200":
-          description: Успешный ответ
-          content:
-            application/json:
-              scheme:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Pet"
-        "400":
-          description: Ошибка аутентификации
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/Error"
+  - url: https://test1.example.com
+  - url: https://test2.example.com
+paths: {}
