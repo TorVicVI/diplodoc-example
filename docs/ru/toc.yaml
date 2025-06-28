@@ -3,6 +3,13 @@ href: index.yaml
 items: 
   - name: О проекте
     href: about.md
+  - name: Swagger Petstore API
+    include:
+      path: ru/openapi
+      includers:
+        - name: openapi
+          input: ru/petstore-api-draft.yaml
+      mode: link
   - name: Дополнительная страница
     href: page.md
   - name: Другая страница
