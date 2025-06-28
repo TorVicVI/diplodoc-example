@@ -50,7 +50,7 @@ paths:
           description: Успешный ответ
           content:
             application/json:
-              scheme:
+              schema:
                 $ref: "#/components/schemas/Pet"
         "400":
           description: Ошибка аутентификации
