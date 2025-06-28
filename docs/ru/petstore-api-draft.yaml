@@ -10,6 +10,9 @@ servers:
   - url: https://api.prod.petstore/v1
     description: Рабочая среда
 
+paths: {}
+
+
 components:
   securitySchemes:
     ApiKeyAuth:
@@ -19,5 +22,3 @@ components:
 
 security:
   - ApiKeyAuth: []
-
-paths: {}
