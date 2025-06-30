@@ -1,8 +1,7 @@
 openapi: 3.0.3
 info:
   title: Главный Интерфейс (API)
-  version: 1.0.0
-  description: Тестовая спецификация для управления питомцами
+  version: 0.0.1
   
 servers:
   - url: https://api.dev.petstore/v1
